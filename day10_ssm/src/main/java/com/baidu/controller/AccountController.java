@@ -24,7 +24,10 @@ public class AccountController {
         return "保存成功";
     }
 
-    //查询
+    /**
+     * 查询
+     * @return
+     */
     @RequestMapping("/findAll")
     public ModelAndView findAll(){
         List<Account> accountList = accountService.findAll();
